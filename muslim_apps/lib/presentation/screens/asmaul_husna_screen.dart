@@ -3,14 +3,20 @@ import '../../core/app_colors.dart';
 
 class AsmaulHusnaScreen extends StatelessWidget {
   const AsmaulHusnaScreen({super.key});
-
-  // Contoh data lokal, kamu bisa melengkapinya nanti sampai 99
+  
   final List<Map<String, String>> _asmaulHusnaList = const [
     {"id": "1", "latin": "Ar-Rahman", "arabic": "الرَّحْمَنُ", "meaning": "Yang Maha Pengasih"},
     {"id": "2", "latin": "Ar-Rahim", "arabic": "الرَّحِيمُ", "meaning": "Yang Maha Penyayang"},
     {"id": "3", "latin": "Al-Malik", "arabic": "الْمَلِكُ", "meaning": "Yang Maha Merajai"},
     {"id": "4", "latin": "Al-Quddus", "arabic": "الْقُدُّوسُ", "meaning": "Yang Maha Suci"},
     {"id": "5", "latin": "As-Salam", "arabic": "السَّلاَمُ", "meaning": "Yang Maha Memberi Kesejahteraan"},
+    {"id": "6", "latin": "Al-Mu'min", "arabic": "الْمُؤْمِنُ", "meaning": "Yang Maha Memberi Keamanan"},
+    {"id": "7", "latin": "Al-Muhaimin", "arabic": "الْمُهَيْمِنُ", "meaning": "Yang Maha Memelihara"},
+    {"id": "8", "latin": "Al-Aziz", "arabic": "الْعَزِيزُ", "meaning": "Yang Maha Perkasa"},
+    {"id": "9", "latin": "Al-Jabbar", "arabic": "الْجَبَّارُ", "meaning": "Yang Maha Gagah perkasa"},
+    {"id": "10", "latin": "Al-Mutakabbir", "arabic": "الْمُتَكَبِّرُ", "meaning": "Yang Maha Memiliki Kebesaran"},
+    {"id": "11", "latin": "Al-Khaliq", "arabic": "الْخَالِقُ", "meaning": "Yang Maha Pencipta"},
+    {"id": "12", "latin": "Al-Bari'", "arabic": "الْبَارِئُ", "meaning": "Yang Maha Melepaskan (Membuat, Membentuk)"},
   ];
 
   @override
