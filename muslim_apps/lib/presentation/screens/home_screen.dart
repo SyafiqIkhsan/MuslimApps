@@ -3,7 +3,10 @@ import 'package:intl/intl.dart';
 import 'package:adhan/adhan.dart';
 import '../../core/app_colors.dart';
 import '../../data/prayer_service.dart';
-import 'quran_screen.dart'; // Pastikan import ini ada
+import 'quran_screen.dart';
+import 'asmaul_husna_screen.dart';
+import 'doa_screen.dart';
+import 'tasbih_screen.dart'; 
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -58,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text("Assalamu Alaikum!", 
+            const Text("Assalamualaikum!", 
               style: TextStyle(color: Colors.white, fontSize: 22, fontWeight: FontWeight.bold)),
             Text(DateFormat('EEEE, d MMMM').format(DateTime.now()), 
               style: const TextStyle(color: Colors.white70, fontSize: 14)),
@@ -136,9 +139,15 @@ class _HomeScreenState extends State<HomeScreen> {
         _buildMenuCard("Al-Quran", Icons.menu_book, onTap: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const QuranScreen()));
         }),
-        _buildMenuCard("Doa-Doa", Icons.front_hand_outlined),
-        _buildMenuCard("Asmaul Husna", Icons.auto_awesome),
-        _buildMenuCard("Tasbih", Icons.fingerprint),
+        _buildMenuCard("Doa-Doa", Icons.front_hand_outlined, onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const DoaScreen()));
+        }),
+        _buildMenuCard("Asmaul Husna", Icons.auto_awesome, onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const AsmaulHusnaScreen()));
+        }),
+        _buildMenuCard("Tasbih", Icons.fingerprint, onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => const TasbihScreen()));
+        }),
       ],
     );
   }
